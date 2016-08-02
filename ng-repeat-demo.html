@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+</head>
+<body>
+	<div data-ng-app="" data-ng-init="names=['Jan', 'Hege', 'Kai']">
+		<p>使用 ng-repeat 来循环数组</p>
+		<li data-ng-repeat="x in names">
+			{{ x }}
+		</li>
+
+	</div>
+	
+</body>
+</html>

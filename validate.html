@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+</head>
+<body>
+	<form ng-app="" name="myForm" ng-init="myText='test@runoob.com'" >
+		Email:
+		<input type="email" name="myAddress" ng-model="myText" required="">
+		<h1>状态</h1>
+		<p>Valid: {{ myForm.myAddress.$valid }}
+	</form>
+	
+</body>
+</html>

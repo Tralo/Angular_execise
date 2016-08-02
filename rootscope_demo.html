@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<h1>姓氏为 {{ lastName }} 家族成员</h1>
+		<ul>
+			<li ng-repeat="x in names">
+				{{x}}
+			</li>
+
+		</ul>
+
+	</div>
+</body>
+<script>
+	var app = angular.module("myApp",[]);
+	app.controller("myCtrl",function($scope,$rootScope){
+		$scope.names = ["Emil Refsnes","Tobias Refsnes","Linus Refsnes"];
+		$rootScope.lastName = "Refsnes";
+	});
+</script>
+</html>
