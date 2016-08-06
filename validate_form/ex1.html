@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="lib/bootstrap.min.css">
+	<script src="lib/angular.min.js"></script>
+	<style>
+		.red{
+			color: red;
+		}
+	</style>
+</head>
+<body ng-app="myApp">
+	<input type="number" 
+		class="form-control" 
+		ng-model="name" 
+		ng-maxlength="10" 
+		ng-minlength="4">
+	<div class="red">{{name}}</div>
+	
+	<script src="js/main.js"></script>
+</body>
+</html>
